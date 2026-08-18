@@ -3,7 +3,8 @@ For website
 # Church Website 
  
 ## About 
-This is apractice church website created using HTML and CSS. 
+This is apractice church website created using HTML and CSS and JavaScript.
+I hope to complete this project at the end of the mentorship programme 
  
 ## Files 
 - index.html - Contains the structure and content of the webpage. 
