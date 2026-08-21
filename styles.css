@@ -40,67 +40,30 @@ nav a:hover {
     text-decoration: bold;
 }
 
-button {
-    border: none;
-    padding: 12px 18px;
-    margin: 8px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.2s;
-}
 
-#themeButton {
-    background-color: #ffffff;
-    color: #101820;
-}
 
-#colorButton {
-    background-color: #a52a2a;
-    color: brown;
-}
-
-#colorButton.changed {
-    background-color: #e74c3c;
-}
-
-.hoverButton {
-    background-color: #555555;
-    color: white;
-}
-
-.hoverButton:hover {
-    background-color: #f1c40f;
-    color: #101820;
-    transform: scale(1.05);
-}
-
-.light-mode {
-    background-color: #f4f4f4;
-    color: #101820;
-}
-
-.light-mode nav a {
-    color: #101820;
-}
-
-.light-mode #themeButton {
-    background-color: #101820;
-    color: white;
-}
-
-.interactive {
-    margin-top: 50px;
+.about-card {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
     padding: 25px;
+    text-align: center;
     border-radius: 12px;
-    border: 2px solid currentColor;
+    background-color: #FFC0CB;
+color: black;
+    box-sizing: border-box;
 }
 
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.about-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+#About\ Salvation\ Baptist\ Church {
+    padding: 40px 20px;
+    text-align: center;
 }
