@@ -1,21 +1,24 @@
-const themeButton = document.getElementById("themeButton");
-const colorButton = document.getElementById("colorButton");
-const colorButton = document.getElementById("colorButton");
+alert("JavaScript is working!");
 
 const message = document.getElementById("message");
 
-// Light and dark mode
-themeButton.addEventListener("click", function () {
-    document.body.classList.toggle("light-mode");
 
-    if (document.body.classList.contains("light-mode")) {
-        themeButton.textContent = "Switch to Dark Mode";
-        message.textContent = "Light mode is now on!";
-    } else {
-        themeButton.textContent = "Switch to Light Mode";
-        message.textContent = "Dark mode is now on!";
-    }
-});
+
 
 
     
+const images = document.querySelectorAll(".gallery img");
+const modal = document.getElementById("imageModal");
+const largeImage = document.getElementById("largeImage");
+const closeButton = document.querySelector(".close");
+
+images.forEach(function(image) {
+    image.addEventListener("click", function() {
+        modal.style.display = "block";
+        largeImage.src = image.src;
+    });
+});
+
+closeButton.addEventListener("click", function() {
+    modal.style.display = "none";
+});
