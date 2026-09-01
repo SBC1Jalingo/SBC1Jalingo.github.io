@@ -7,11 +7,7 @@ const nextButton = document.getElementById("nextButton");
 
 let currentImage = 0;
 
-<<<<<<< HEAD
 // Open image
-=======
-// Open an image
->>>>>>> e49a9979cfe49a1e2cc47cb03661b720f257ecd9
 images.forEach(function(image, index) {
     image.addEventListener("click", function() {
         currentImage = index;
@@ -20,11 +16,7 @@ images.forEach(function(image, index) {
     });
 });
 
-<<<<<<< HEAD
 // Close image
-=======
-// Close the popup
->>>>>>> e49a9979cfe49a1e2cc47cb03661b720f257ecd9
 closeButton.addEventListener("click", function() {
     modal.style.display = "none";
 });
