@@ -197,3 +197,13 @@ color: black;
 .next:hover {
     color: #ccc;
 }
+
+
+
+
+#imageCaption {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
