@@ -1,4 +1,5 @@
 const images = document.querySelectorAll(".gallery img");
+const imageCaption = document.getElementById("imageCaption");
 const modal = document.getElementById("imageModal");
 const largeImage = document.getElementById("largeImage");
 const closeButton = document.querySelector(".close");
@@ -11,8 +12,9 @@ let currentImage = 0;
 images.forEach(function(image, index) {
     image.addEventListener("click", function() {
         currentImage = index;
-        largeImage.src = image.src;
-        modal.style.display = "block";
+       largeImage.src = image.src;
+imageCaption.textContent = image.alt;
+modal.style.display = "block";
     });
 });
 
