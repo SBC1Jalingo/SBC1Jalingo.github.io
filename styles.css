@@ -207,3 +207,30 @@ color: black;
     margin-top: 15px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+#backToTop,
+#goToContact {
+    position: fixed;
+    right: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+#backToTop {
+    bottom: 70px;
+}
+
+#goToContact {
+    bottom: 20px;
+}
