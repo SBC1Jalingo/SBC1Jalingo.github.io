@@ -31,7 +31,8 @@ prevButton.addEventListener("click", function() {
         currentImage = images.length - 1;
     }
 
-    largeImage.src = images[currentImage].src;
+  largeImage.src = images[currentImage].src;
+imageCaption.textContent = images[currentImage].alt;
 });
 
 // Next image
@@ -41,6 +42,6 @@ nextButton.addEventListener("click", function() {
     if (currentImage >= images.length) {
         currentImage = 0;
     }
-
-    largeImage.src = images[currentImage].src;
+largeImage.src = images[currentImage].src;
+imageCaption.textContent = images[currentImage].alt;
 });
