@@ -42,32 +42,31 @@ nav a:hover {
 
 
 
+
+
 .about-card {
-    width: 80%;
-    max-width: 700px;
-    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
     padding: 25px;
-    text-align: center;
-    border-radius: 12px;
-    background-color: #FFC0CB;
-color: black;
+    text-align: left;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 0;
     box-sizing: border-box;
 }
 
 .about-card h3 {
+    color: #C9A34A;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 .about-card p {
+    color: #FFFFFF;
     font-size: 18px;
     line-height: 1.6;
 }
-#About\ Salvation\ Baptist\ Church {
-    padding: 40px 20px;
-    text-align: center;
-}
-
 
 
 
@@ -233,4 +232,413 @@ color: black;
 
 #goToContact {
     bottom: 20px;
+}
+
+
+/* Back to Top button */
+#backToTop {
+    background-color: #242424;
+    color: #C9A34A;
+    border: 2px solid #C9A34A;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #C9A34A;
+    color: #0B0B0B;
+}
+
+
+/* Contact button */
+#goToContact {
+    background-color: #C9A34A;
+    color: #0B0B0B;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#goToContact:hover {
+    background-color: #FFFFFF;
+    color: #0B0B0B;
+}
+
+
+
+/* Premium black and gold theme */
+body {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #C9A34A;
+}
+
+
+
+
+
+/* Navigation bar */
+nav {
+    background-color: #C9A34A;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #0B0B0B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+
+
+
+/* About section layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.about-container .about-card {
+    flex: 1;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.about-image {
+    width: 45%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Our Services section */
+#Services {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+#Services h2 {
+    color: #C9A34A;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Services layout */
+.services-container {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+/* Individual service cards */
+.service-card {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 25px;
+    flex: 1;
+    min-height: 180px;
+    box-sizing: border-box;
+}
+
+.service-card h3 {
+    color: #C9A34A;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+/* Gallery section */
+#Profiles {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+#Profiles h2 {
+    color: #C9A34A;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Gallery images */
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+
+/* Responsive layout for tablets and phones */
+
+@media (max-width: 768px) {
+
+    /* About section */
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Services cards */
+    .services-container {
+        flex-direction: column;
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* Venue section */
+#Venue {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+#Venue h2 {
+    color: #C9A34A;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.venue-content {
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.venue-content p {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Contact section */
+#Contact {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+#Contact h2 {
+    color: #C9A34A;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#Contact p {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Remove default hyperlink styling from service cards */
+.service-card {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+}
+
+.service-card:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.service-card span {
+    color: #C9A34A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+/* Church Gallery Slideshow */
+
+.gallery {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.gallery-prev,
+.gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #C9A34A;
+    color: #0B0B0B;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.gallery-prev {
+    left: 10px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+.gallery-dots {
+    text-align: center;
+    padding: 12px;
+}
+
+.gallery-dots button {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    background: #777;
+    cursor: pointer;
+}
+
+.gallery-dots button.active {
+    background: #C9A34A;
+}
+
+@media (max-width: 600px) {
+    .slide {
+        height: 280px;
+    }
+}
+
+/* Fix Gallery Slideshow Layout */
+
+.gallery {
+    display: block;
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    display: block;
+}
+
+.gallery .slide {
+    display: none;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    gap: 8px;
+}
+
+.gallery-dots button {
+    flex-shrink: 0;
 }

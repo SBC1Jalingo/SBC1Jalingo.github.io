@@ -1,0 +1,146 @@
+
+/* Upcoming Events Section */
+#Events {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+#Events h2 {
+    color: #C9A34A;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Events layout */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Individual event cards */
+.event-card {
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #3A3A3A;
+}
+
+.event-card h3 {
+    color: #C9A34A;
+    font-size: 21px;
+}
+
+.event-card p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.event-card strong {
+    color: #C9A34A;
+}
+
+.event-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #C9A34A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-card a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Individual Event Details Page */
+
+body {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #C9A34A;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #0B0B0B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+/* Event page heading */
+.event-header {
+    background-color: #242424;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.event-header h1 {
+    color: #C9A34A;
+    font-size: 38px;
+}
+
+.event-header p {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* Event information cards */
+.event-details {
+    background-color: #242424;
+    width: 85%;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.event-details h2,
+.event-details h3 {
+    color: #C9A34A;
+}
+
+.event-details p,
+.event-details li {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.event-details strong {
+    color: #C9A34A;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .event-header h1 {
+        font-size: 28px;
+    }
+
+    .event-details {
+        width: 90%;
+        padding: 20px;
+    }
+}

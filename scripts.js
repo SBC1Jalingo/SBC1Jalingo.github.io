@@ -79,7 +79,54 @@ goToContact.addEventListener("click", function() {
 
 
 
+// Church Gallery Automatic Slideshow
 
+const slides = document.querySelectorAll(".slide");
+const galleryPrev = document.getElementById("galleryPrev");
+const galleryNext = document.getElementById("galleryNext");
+const galleryDots = document.getElementById("galleryDots");
+
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+    });
+
+    galleryDots.querySelectorAll("button").forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+    });
+
+    currentSlide = index;
+}
+
+// Create navigation dots
+slides.forEach((slide, index) => {
+    const dot = document.createElement("button");
+
+    dot.addEventListener("click", () => {
+        showSlide(index);
+    });
+
+    galleryDots.appendChild(dot);
+});
+
+// Next image
+galleryNext.addEventListener("click", () => {
+    showSlide((currentSlide + 1) % slides.length);
+});
+
+// Previous image
+galleryPrev.addEventListener("click", () => {
+    showSlide((currentSlide - 1 + slides.length) % slides.length);
+});
+
+// Start slideshow
+showSlide(0);
+
+setInterval(() => {
+    showSlide((currentSlide + 1) % slides.length);
+}, 4000);
 
 
 
